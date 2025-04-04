@@ -4,7 +4,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 import pages.AdminPage;
 
 public class AdminStepDefs {
@@ -12,7 +11,8 @@ public class AdminStepDefs {
     private AdminPage admin=new AdminPage();
 
     @Given("User can able to nagiavte to admin page")
-    public void userCanAbleToNagiavteToAdminPage() {
+    public void userCanAbleToNagiavteToAdminPage()
+    {
         System.out.println(admin.ClickAdminBtn());
     }
 

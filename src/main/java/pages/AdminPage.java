@@ -1,18 +1,14 @@
 package pages;
 
 import baseClass.BrowserFactory;
-import org.apache.commons.compress.compressors.lz77support.LZ77Compressor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.ArrayList;
+
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -47,7 +43,8 @@ public class AdminPage {
     private By DeleteConfirm=By.xpath("//*[@class='oxd-button oxd-button--medium oxd-button--label-danger orangehrm-button-margin']");
 
 
-    public String ClickAdminBtn(){
+    public String ClickAdminBtn()
+    {
         driverWait=new WebDriverWait(driver,20);
         driverWait.until(ExpectedConditions.visibilityOfElementLocated(AdminBtn));
         WebElement clickadminBtn=driver.findElement(AdminBtn);
