@@ -153,9 +153,9 @@ public class AdminPage {
 
             driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 
-            Actions actions=new Actions(driver);
+         /*   Actions actions=new Actions(driver);
             WebElement DelBtnConfirm=driver.findElement(DeleteConfirm);
-            actions.moveToElement(DelBtnConfirm).click().perform();
+            actions.moveToElement(DelBtnConfirm).click().perform();*/
 
         }
         else

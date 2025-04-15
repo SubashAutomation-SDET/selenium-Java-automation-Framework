@@ -5,7 +5,7 @@ Feature: User login page
   Background:
     Given  user on the login page
 
-  @AddEmployees
+
   Scenario Outline: Successful login with valid credentials
     Given user have entered the valid username <UsernameValue>
     And user have entered the valid password <PasswordValue>
